@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SAMAYO - lightbox</title>
+<style>
+html, body{
+	padding:0; 
+	margin:0;
+}
+section, article{
+	 display: block;
+	 width: 100%;
+
+}
+.close-window{
+	color:red;
+}
+ figure{
+ 	float:right;
+ }
+ .resize-image{
+	float:left; 
+	z-index:1000; 
+	margin-top:100px;
+	display:none;
+	position:relative; 
+	left:24%; 
+ }
+
+ .image-container{
+ 	display: block; 
+ 	min-height: 120px;
+ 	margin:auto;
+ }
+</style>
+
+</head>
+<body class="page">
+
+	<section>
+	<!-- the actual div that display the big version of the image  -->
+			
+		<article>
+		
+			<p class="text-content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+
+			<div class="image-container">
+			
+				<figure> 
+					<img src="monkey.jpg" data-big-image="monkey_big.jpg">
+					<figcaption> monkeybone </figcaption>
+				</figure>
+
+				<figure> 
+					<img src="desert.jpg" data-big-image="desert_big.jpg">
+					<figcaption> grand canyon </figcaption>
+				</figure>
+
+				<figure> 
+					<img src="penguins.jpg" data-big-image="penguins_big.jpg">	
+					<figcaption> happy feet </figcaption>
+				</figure>
+
+				<div class="resize-image">
+					<div class="x"></div>
+				</div>						
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</article>
+		<aside>
+			
+		</aside>
+	</section>
+
+</body>
+	<script src="lightbox.js "></script>
+</html>
